@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen10"
+        >
+        <com.chatlocalybusiness.ui.CircleImageView
+            android:id="@+id/iv_productImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/tata"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/tv_proName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_productImage"
+            android:layout_marginLeft="@dimen/dimen10"
+            android:text="TATA SALT "
+            android:textColor="@color/lightblack"
+            android:textSize="@dimen/textsize16"
+            />
+        <TextView
+            android:id="@+id/tv_prodiscount"
+            android:layout_width="@dimen/dimen60"
+            android:layout_height="@dimen/dimen20"
+            android:background="@drawable/tag"
+            android:text="51 % off"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:layout_toRightOf="@+id/tv_proName"
+            android:layout_marginLeft="@dimen/dimen10"
+            />
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="@dimen/dimen20"
+            android:layout_height="@dimen/dimen20"
+            android:src="@drawable/edit"
+            android:layout_alignParentRight="true"
+            />
+        <LinearLayout
+            android:id="@+id/ll_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_proName"
+            android:layout_toRightOf="@id/iv_productImage"
+            android:paddingLeft="@dimen/dimen10"
+            android:paddingRight="@dimen/dimen10"
+            android:paddingTop="@dimen/dimen5"
+            >
+            <TextView
+                android:id="@+id/tv_sku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#1451245"
+                android:textSize="10dp"
+                />
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/tv_brandName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brand Name"
+                android:textSize="@dimen/dimen10"
+                android:layout_marginLeft="@dimen/dimen5"
+                />
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/tv_businessName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business Name"
+                android:textSize="@dimen/dimen10"
+                android:layout_marginLeft="@dimen/dimen5"
+                />
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray"
+                android:layout_marginLeft="5dp"
+                />
+            <ImageView
+                android:id="@+id/iv_publish"
+                android:layout_width="@dimen/dimen15"
+                android:layout_height="@dimen/dimen15"
+                android:src="@drawable/publish_icon"
+                android:layout_marginLeft="@dimen/dimen5"
+               android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/ll_middle"
+    android:layout_toRightOf="@+id/iv_productImage"
+    android:paddingLeft="@dimen/dimen10"
+    android:paddingTop="@dimen/dimen5"
+    >
+    <TextView
+        android:id="@+id/tv_discription"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.44"
+        android:maxLines="2"
+        android:text="Business Name skjbi kjdbi kn bf kjbdknbv jkd bk sbnd skd jbksd bskdjfk dsjb "
+        android:textSize="@dimen/dimen10"
+
+        />
+    <TextView
+        android:id="@+id/tv_proPrice"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:text="Rs 1800"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/dimen10"
+        android:gravity="end"
+        android:maxLines="1"
+        />
+</LinearLayout>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

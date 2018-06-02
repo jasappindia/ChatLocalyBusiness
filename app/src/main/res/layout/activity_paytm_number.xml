@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.chatlocalybusiness.activity.GetStartedActivity"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_receivePAymentVia"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen30"
+            android:textSize="@dimen/textsize18"
+            android:textColor="@color/lightblack"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/dimen65"
+            android:layout_height="@dimen/dimen25"
+            android:layout_gravity="center"
+            android:src="@drawable/paytm_logo"
+            android:layout_marginTop="@dimen/dimen20"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen20"
+            android:layout_marginLeft="@dimen/dimen20"
+            android:layout_marginRight="@dimen/dimen20"
+            android:background="@drawable/promo_bg"
+            android:elevation="@dimen/dimen3"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="@dimen/dimen40"
+                android:gravity="center"
+                android:text="+ 91"
+                android:textColor="@color/lightblack"
+                android:inputType="number"
+                android:maxLength="10"
+                android:theme="@style/EditTextBoxTheme"
+                android:enabled="false"
+                />
+
+            <EditText
+                android:id="@+id/et_phoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen40"
+                android:gravity="center"
+                android:hint="@string/str_enterpaytmphone"
+                android:textColorHint="#DDDD"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="@dimen/textsize16"
+                android:theme="@style/EditTextBoxTheme"
+                />
+            <ImageView
+                android:id="@+id/iv_checkIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="@dimen/dimen10"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_paytm_numberSuggestion"
+                android:layout_gravity="center"
+                android:textSize="@dimen/textsize16"
+                android:gravity="center"
+                android:textColor="@color/grey_text"
+               android:padding="@dimen/dimen10"
+                android:layout_marginTop="@dimen/dimen10"
+
+                />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen40"
+
+        >
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_width="@dimen/dimen80"
+            android:layout_height="40dp"
+            android:text="@string/str_skip"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsize14"
+            android:textColor="@color/white"
+            android:clickable="false"
+            android:background="@drawable/blue_btn_bg"
+            android:focusable="false"
+            />
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="@dimen/dimen80"
+            android:layout_height="40dp"
+            android:text="@string/str_finish"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textsize14"
+            android:textColor="@color/light_gray"
+            android:clickable="false"
+            android:background="@drawable/gray_btn_bg"
+            android:focusable="false"
+            android:layout_marginLeft="@dimen/dimen70"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_subadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_empName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Admin"
+            android:textSize="@dimen/textsize16"
+            android:padding="@dimen/dimen15"
+            />
+        <TextView
+            android:id="@+id/tv_designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ~ Sub Admin"
+            android:textSize="@dimen/textsize16"
+            android:padding="@dimen/dimen15"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/themeColor"
+            />
+    </RelativeLayout>
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/grey_background"
+             />
+   <!-- <RelativeLayout
+        android:id="@+id/rl_worker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_workerName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="worker"
+            android:textSize="@dimen/textsize16"
+            android:padding="@dimen/dimen15"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ~ Worker"
+            android:textSize="@dimen/textsize16"
+            android:padding="@dimen/dimen15"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/themeColor"
+            />
+    </RelativeLayout>
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/grey_background"
+             />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_workerName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="worker"
+            android:textSize="@dimen/textsize16"
+            android:padding="@dimen/dimen15"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ~ Worker"
+            android:textSize="@dimen/textsize16"
+            android:padding="@dimen/dimen15"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/themeColor"
+            />
+    </RelativeLayout>
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/grey_background"
+             />-->
+</LinearLayout>

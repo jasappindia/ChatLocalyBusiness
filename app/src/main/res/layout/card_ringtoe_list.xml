@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_country_list_row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_ringtone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen10"
+        android:paddingLeft="@dimen/dimen15"
+        android:paddingRight="@dimen/dimen15"
+        android:paddingTop="@dimen/dimen10"
+        android:singleLine="true"
+        android:text=" India "
+        android:textColor="@color/lightblack"
+        android:textSize="@dimen/textsize16"
+        />
+
+    <ImageView
+        android:id="@+id/iv_ringtone_selected"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/check"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen10" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignBottom="@+id/tv_ringtone"
+        android:layout_marginTop="@dimen/dimen1"
+        android:background="@color/light_gray">
+    </View>
+</RelativeLayout>

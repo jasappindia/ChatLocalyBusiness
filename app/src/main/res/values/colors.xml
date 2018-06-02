@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <color name="colorPrimary">#F0F0F0</color>
+    <!--<color name="colorPrimaryDark">#999999</color>-->
+    <color name="colorPrimaryDark">#AEAEAE</color>
+    <color name="colorAccent">#3579f0</color>
+    <color name="themeColor">#3579f0</color>
+    <color name="lighttheme">#d23579f0</color>
+
+    <color name="darkgray">#656565</color>
+    <color name="lightblack">#555555</color>
+    <color name="gray">#A2A2A2</color>
+
+    <color name="bg_line">#E7E7E7</color>
+
+    <color name="color_1">#EF9A9A</color>
+    <color name="color_2">#E53935</color>
+    <color name="color_3">#F8BBD0</color>
+    <color name="color_4">#D81B60</color>
+    <color name="color_5">#880E4F</color>
+    <color name="color_6">#CE93D8</color>
+    <color name="color_7">#8E24AA</color>
+    <color name="color_8">#4A148C</color>
+    <color name="color_9">#B39DDB</color>
+    <color name="color_10">#673AB7</color>
+    <color name="color_11">#311B92</color>
+    <color name="color_12">#3D5AFE</color>
+    <color name="color_13">#29B6F6</color>
+    <color name="color_14">#26C6DA</color>
+    <color name="color_15">#26A69A</color>
+    <color name="color_16">#4CAF50</color>
+    <color name="color_17">#8BC34A</color>
+    <color name="color_18">#CDDC39</color>
+    <color name="color_19">#FFEB3B</color>
+    <color name="color_20">#FFC107</color>
+    <color name="color_21">#FF9800</color>
+    <color name="color_22">#FF5722</color>
+    <color name="color_23">#795548</color>
+    <color name="color_24">#9E9E9E</color>
+    <color name="color_25">#607D8B</color>
+    <color name="color_26">#000000</color>
+    <color name="brown">#66BBEA</color>
+    <color name="bottom_tab_background">#f7f7f7</color>
+    <color name="grey_text">#a9a7a7</color>
+    <color name="dark_red">#880E4F</color>
+    <color name="toolback">#0078d7</color>
+    <color name="searchback">#2998ef</color>
+
+    <color name="appbar_color">#F0F0F0</color>
+
+    <color name="image_appbar_color">#605f5f</color>
+    <color name="background_color">#005A7B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="signupbutton">#47C8E3</color>
+    <color name="colorGrayDark">#88000000</color>
+    <color name="top_american_background">#CEDCE1</color>
+    <color name="graybackground">#929292</color>
+    <color name="light_sky">#bfd1d8</color>
+    <color name="yellow">#E6c214</color>
+    <color name="graylight">#c7c6c6</color>
+    <color name="reviewtxtcolor">#3787b8</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#7F8E97</color>
+    <color name="divider_color">#dfdfdf</color>
+    <color name="grey_background">#E9E9E9</color>
+    <color name="light_grey">#c0f9f6f6</color>
+
+    <color name="red">#ff0000</color>
+    <!--<color name="divider_color">#E8e8e8</color>-->
+    <color name="search_view_background">#C9C9CE</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
+
+    <color name="bg_view_sms">#ffd423</color>
+    <color name="bg_view_otp">#fc6d38</color>
+    <color name="grey_action_bar">#EBEBEB</color>
+    <color name="off_white">#f1f5f7</color>
+    <color name="blue_selector">#00aeea</color>
+    <color name="red_negative_progress">#ff3333</color>
+
+    <color name="bg_color">#e3ebee</color>
+
+    <color name="background">#f5f1f1f1</color>
+    <color name="grey">#F0F0F0</color>
+    <color name="green">#68Ad61</color>
+    <color name="text_blue">#4B61FF</color>
+    <color name="language_english_txt_color">#A3A3B1</color>
+    <color name="language_cencel_txt_color">#A3A3B1</color>
+    <color name="language_header_txt_color">#344466</color>
+    <color name="language_select_txt_color">#0C50B5</color>
+
+
+    <color name="event_color_01">#59dbe0</color>
+    <color name="event_color_02">#f57f68</color>
+    <color name="event_color_03">#87d288</color>
+    <color name="event_color_04">#f8b552</color>
+    <color name="toolbar">#efefef</color>
+    <color name="toolbar_text">#8f000000</color>
+    <color name="accent">#2789e4</color>
+    <color name="light_red">#c62424</color>
+
+
+
+
+    <color name="cell_background_color">#ffffff</color>
+    <color name="cell_text_color">#1f1f1f</color>
+    <color name="header_line_color">#ffff4444</color>
+    <!-- Material Design TableView Colors -->
+    <color name="md_cell_text_color">#1f1f1f</color>
+    <color name="md_column_header_text_color">#696969</color>
+    <color name="md_highlight_row_background_color">#EEEEEE</color>
+    <color name="md_selected_background_color">#F5F5F5</color>
+    <color name="md_cell_line_color">#dbdbdb</color>
+
+    <!-- Overriding the default values of the tableView -->
+    <!-- <color name="cell_line_color">#dbdbdb</color> -->
+    <!-- <color name="table_view_selected_background_color">@color/md_selected_background_color</color> -->
+    <color name="default_background_color">@color/cell_background_color</color>
+
+</resources>

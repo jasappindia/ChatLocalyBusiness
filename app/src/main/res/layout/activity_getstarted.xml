@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chatlocalybusiness.activity.GetStartedActivity"
+    android:background="@color/white"
+    android:id="@+id/rl_main"
+    >
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <ImageView
+     android:layout_width="@dimen/dimen100"
+     android:layout_height="@dimen/dimen100"
+     android:layout_gravity="center"
+     android:layout_marginTop="@dimen/dimen60"
+     android:src="@mipmap/logo"
+     />
+
+    <com.chatlocalybusiness.textview.TextViewReguler
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_heading"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen30"
+        android:textSize="@dimen/textsize22"
+        android:textColor="@color/lightblack"
+        />
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <com.chatlocalybusiness.textview.TextViewReguler
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/app_tagline"
+        android:layout_gravity="center"
+     android:layout_marginTop="@dimen/dimen30"
+     android:textSize="@dimen/textsize18"
+     android:gravity="center"
+     android:paddingLeft="@dimen/dimen50"
+     android:paddingRight="@dimen/dimen50"
+     android:lineSpacingExtra="5dp"
+        android:id="@+id/textViewReguler"
+        android:textColor="@color/gray"
+        />
+
+    <Button
+    android:id="@+id/btn_getStarted"
+    android:layout_width="@dimen/dimen120"
+    android:layout_height="40dp"
+    android:text="@string/str_getstarted"
+    android:layout_gravity="center"
+    android:textSize="@dimen/textsize14"
+    android:layout_marginTop="@dimen/dimen100"
+    android:background="@drawable/blue_btn_bg"
+    android:textColor="@color/white"
+    />
+ <TextView
+     android:id="@+id/tv_alreadyMember"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/str_allready_member"
+     android:layout_gravity="center"
+     android:layout_marginTop="@dimen/dimen30"
+     android:textSize="@dimen/textsize16"
+     android:gravity="center"
+     android:lineSpacingExtra="5dp"
+     android:textColor="@color/themeColor"
+     />
+</LinearLayout>
+</LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>

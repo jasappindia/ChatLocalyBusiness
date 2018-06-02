@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_main">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chatlocalybusiness.activity.GetStartedActivity"
+    android:background="#fff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_adminContact"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen30"
+        android:textSize="@dimen/dimen20"
+        android:textColor="@color/lightblack"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen20"
+        android:layout_marginLeft="@dimen/dimen20"
+        android:layout_marginRight="@dimen/dimen20"
+        android:background="@drawable/promo_bg"
+        android:elevation="@dimen/dimen3"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="@dimen/dimen40"
+            android:gravity="center"
+            android:text="+ 91"
+            android:textColor="@color/lightblack"
+            android:inputType="number"
+            android:maxLength="10"
+            android:theme="@style/EditTextBoxTheme"
+            android:enabled="false"
+            />
+
+        <EditText
+            android:id="@+id/et_phoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen40"
+            android:gravity="center"
+            android:hint="@string/str_enterphone"
+            android:textColorHint="#DDDD"
+           android:inputType="number"
+            android:maxLength="10"
+         android:backgroundTint="#0000"
+            />
+        <ImageView
+            android:id="@+id/iv_checkIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/dimen10"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+   <!-- <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/dimen5"
+    >
+    <TextView
+        android:id="@+id/tv_privacyPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_privacyPolicy"
+        android:layout_gravity="center"
+        android:textSize="@dimen/textsize12"
+        android:textColor="@color/themeColor"
+        />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/str_and"
+    android:layout_gravity="center"
+        android:textSize="@dimen/textsize14"
+        android:textColor="@color/grey_text"
+        android:layout_marginLeft="@dimen/dimen5"
+
+        />
+    <TextView
+        android:id="@+id/tv_terms"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/str_terms"
+    android:layout_gravity="center"
+    android:textSize="@dimen/textsize12"
+    android:textColor="@color/themeColor"
+        android:layout_marginLeft="@dimen/dimen5"
+
+    />
+</LinearLayout>
+-->
+    <Button
+        android:id="@+id/btn_continueLogin"
+        android:layout_width="@dimen/dimen120"
+        android:layout_height="40dp"
+        android:text="@string/str_continue"
+        android:layout_gravity="center"
+        android:textSize="@dimen/textsize14"
+        android:layout_marginTop="@dimen/dimen40"
+        android:textColor="@color/light_gray"
+        android:background="@drawable/gray_btn_bg"
+
+        />
+   <!-- <TextView
+        android:id="@+id/tv_alreadyMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_allready_member"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen20"
+        android:textSize="@dimen/textsize16"
+        android:gravity="center"
+        android:textColor="@color/themeColor"
+
+        />-->
+</LinearLayout>
+<FrameLayout
+android:id="@+id/container_login"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+</FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/rl_main"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appbar_color">
+
+        <ImageView
+            android:id="@+id/iv_arrowBack"
+            android:layout_width="@dimen/dimen40"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="@dimen/dimen10"
+            android:padding="@dimen/dimen10"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:id="@+id/tv_businessName"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/iv_arrowBack"
+            android:layout_toRightOf="@+id/iv_arrowBack"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/lightblack"
+            android:textSize="18dp"
+            android:layout_marginRight="@dimen/dimen20"
+            android:singleLine="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/rl_appBar"
+        android:background="@color/appbar_color">
+
+        <TextView
+            android:id="@+id/tv_noProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen30"
+            android:gravity="center_vertical"
+            android:textColor="@color/lightblack"
+            android:textSize="@dimen/textsize16" />
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen20"
+            android:background="@color/appbar_color"></android.support.v7.widget.SearchView>
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_Categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_searchBar"
+        app:tabSelectedTextColor="@color/themeColor"
+        >
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab_Categories"
+        >
+
+
+    </android.support.v4.view.ViewPager>
+  <!--  <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_galleryView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab_Categories"
+        ></android.support.v7.widget.RecyclerView>
+-->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dimen50"
+        android:layout_height="@dimen/dimen50"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>

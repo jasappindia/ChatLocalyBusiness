@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_main"
+    android:background="@color/white"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/appbar_blockedstats"></include>
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_blockedChats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen20"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_noInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBar"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:id="@+id/iv_noInternet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/no_internet"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tv_tryAgain"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen5"
+            android:gravity="center"
+            android:text="Try again"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen60"
+            android:layout_centerHorizontal="true"
+            android:background="@color/themeColor"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize16"
+            />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>

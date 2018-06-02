@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "170550215347",
+    "firebase_url": "https://chatlocaly-business-app.firebaseio.com",
+    "project_id": "chatlocaly-business-app",
+    "storage_bucket": "chatlocaly-business-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170550215347:android:9b2f4e33f182410c",
+        "android_client_info": {
+          "package_name": "com.chatlocaly.business"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170550215347-3lqr1hoik2v65uuuohhfhqdakc7vve0m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chatlocaly.business",
+            "certificate_hash": "0f4a59985625e1f8dd28583684bfd6c41df74361"
+          }
+        },
+        {
+          "client_id": "170550215347-in789bootpfhv7k0am92oscaj8fgvesk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABYnpkvGU7VlW6TWvj2ogC8FjoNPZZXNk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170550215347-in789bootpfhv7k0am92oscaj8fgvesk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

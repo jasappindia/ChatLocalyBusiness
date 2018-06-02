@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginRight="@dimen/dimen10">
+
+    <ImageView
+        android:id="@+id/iv_galleryImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_remove"
+        android:src="@drawable/banner"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/iv_checkIcon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/check"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        />
+ <RelativeLayout
+     android:id="@+id/rl_remove"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:textSize="@dimen/textsize16"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"
+        />
+     <ImageView
+        android:id="@+id/iv_bannerCancel"
+        android:layout_width="@dimen/dimen25"
+        android:layout_height="@dimen/dimen25"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/cancel"
+        />
+ </RelativeLayout>
+</RelativeLayout>

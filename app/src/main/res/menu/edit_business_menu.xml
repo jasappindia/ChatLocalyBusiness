@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_editBusinessInfo"
+        android:orderInCategory="100"
+        android:title="@string/Str_editBusinessInfo"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_editOverview"
+        android:orderInCategory="100"
+        android:title="@string/Str_editOverview"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_AddProducts"
+        android:orderInCategory="100"
+        android:title="@string/Str_addProduct"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_AddSevices"
+        android:orderInCategory="100"
+        android:title="@string/Str_addServices"
+        app:showAsAction="never"
+        />
+</menu>

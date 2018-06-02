@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appbar_color">
+
+            <ImageView
+                android:id="@+id/iv_arrowBack"
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginLeft="@dimen/dimen10"
+                android:padding="@dimen/dimen10"
+                android:src="@drawable/arrow_left" />
+
+            <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:layout_toRightOf="@+id/iv_arrowBack"
+                android:gravity="center_vertical"
+                android:text="@string/str_Appeal"
+                android:textColor="@color/lightblack"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <com.chatlocalybusiness.textview.TextViewReguler
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/textsize16"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp" />
+    <ImageView
+        android:layout_width="@dimen/dimen10"
+        android:layout_height="@dimen/dimen10"
+        android:src="@drawable/star"
+        android:layout_toRightOf="@+id/tv_businessCat"
+        android:layout_marginTop="20dp"   />
+</LinearLayout>
+
+    <EditText
+        android:id="@+id/et_discription"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen100"
+        android:layout_marginLeft="@dimen/dimen10"
+        android:layout_marginRight="@dimen/dimen10"
+        android:layout_marginTop="@dimen/dimen10"
+        android:background="@drawable/discription_bg"
+        android:gravity="top|left"
+        android:hint="Max 210 Character "
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:maxLines="5"
+        android:padding="@dimen/dimen5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <com.chatlocalybusiness.textview.TextViewReguler
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_yourID"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/textsize16"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp" />
+        <ImageView
+            android:layout_width="@dimen/dimen10"
+            android:layout_height="@dimen/dimen10"
+            android:src="@drawable/star"
+            android:layout_toRightOf="@+id/tv_businessCat"
+            android:layout_marginTop="20dp"   />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_id"
+        android:layout_width="@dimen/dimen250"
+        android:layout_height="@dimen/dimen200"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/uploadimage"
+        android:scaleType="centerCrop"
+        />
+    <Button
+        android:id="@+id/btn_chooseImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_chooseImage"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_Submit"
+        android:layout_marginTop="@dimen/dimen40"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dimen50"
+        android:layout_height="@dimen/dimen50"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+    </RelativeLayout>

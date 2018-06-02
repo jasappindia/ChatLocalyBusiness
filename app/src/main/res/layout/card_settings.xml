@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/dimen20"
+        android:layout_height="@dimen/dimen20"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen10"
+        android:src="@drawable/your_profile"
+        />
+     <TextView
+       android:id="@+id/tv_settingsOptions"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/str_blocked"
+       android:textSize="@dimen/textsize16"
+       android:padding="@dimen/dimen15"
+         android:layout_toRightOf="@+id/iv_icon"
+       />
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="@color/grey_background"
+       android:layout_below="@+id/tv_settingsOptions"
+       />
+
+</RelativeLayout>

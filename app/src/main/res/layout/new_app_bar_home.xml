@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/appbar_color"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+    local:theme="@style/toolbarback">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_toRightOf="@+id/iv_toggle"
+        android:text="ChatLocaly Business"
+        android:textSize="18dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/lightblack"
+        android:layout_marginLeft="@dimen/dimen20"
+        />
+</android.support.v7.widget.Toolbar><!--?attr/actionBarSize-->
+
+
+
+

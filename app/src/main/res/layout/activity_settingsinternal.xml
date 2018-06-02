@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_main"
+    >
+
+    <LinearLayout
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appbar_color"
+            >
+            <ImageView
+                android:id="@+id/iv_arrowBack"
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="?attr/actionBarSize"
+                android:src="@drawable/arrow_left"
+                android:padding="@dimen/dimen10"
+                android:layout_marginLeft="@dimen/dimen10"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_toRightOf="@+id/iv_arrowBack"
+                android:text="@string/str_internal"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/lightblack"
+                android:layout_marginLeft="@dimen/dimen20"
+                />
+            <ImageView
+                android:id="@+id/iv_remove"
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="?attr/actionBarSize"
+                android:src="@drawable/delete_icon"
+                android:padding="@dimen/dimen10"
+                android:layout_marginRight="@dimen/dimen10"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_internalSubadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_internalworker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/ll_newWoker"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_subadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_empName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Admin"
+                    android:textSize="@dimen/textsize16"
+                    android:padding="@dimen/dimen15"
+                    />
+                <TextView
+                    android:id="@+id/tv_designation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ~ Sub Admin"
+                    android:textSize="@dimen/textsize16"
+                    android:padding="@dimen/dimen15"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/themeColor"
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_background"
+                />
+             <RelativeLayout
+                 android:id="@+id/rl_worker"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:id="@+id/tv_workerName1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="worker"
+                     android:textSize="@dimen/textsize16"
+                     android:padding="@dimen/dimen15"
+                     />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text=" ~ Worker"
+                     android:textSize="@dimen/textsize16"
+                     android:padding="@dimen/dimen15"
+                     android:layout_alignParentRight="true"
+                     android:textColor="@color/themeColor"
+                     />
+             </RelativeLayout>
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/grey_background"
+                      />
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:id="@+id/tv_workerName2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="worker"
+                     android:textSize="@dimen/textsize16"
+                     android:padding="@dimen/dimen15"
+                     />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text=" ~ Worker"
+                     android:textSize="@dimen/textsize16"
+                     android:padding="@dimen/dimen15"
+                     android:layout_alignParentRight="true"
+                     android:textColor="@color/themeColor"
+                     />
+             </RelativeLayout>
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/grey_background"
+                      />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_remaining_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_remaining_worker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dimen50"
+        android:layout_height="@dimen/dimen50"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

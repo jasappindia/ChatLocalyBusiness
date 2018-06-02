@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appbar_color">
+
+            <ImageView
+                android:id="@+id/iv_arrowBack"
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginLeft="@dimen/dimen10"
+                android:padding="@dimen/dimen10"
+                android:src="@drawable/arrow_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:layout_toRightOf="@+id/iv_arrowBack"
+                android:gravity="center_vertical"
+                android:text="Your Profile"
+                android:textColor="@color/lightblack"
+                android:textSize="18dp" />
+
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimen1"
+            android:orientation="vertical"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_margin="@dimen/dimen50"
+android:layout_gravity="center"                >
+
+            <com.chatlocalybusiness.ui.CircleImageView
+                android:id="@+id/iv_user_profile"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo"
+                android:layout_centerHorizontal="true"
+                />
+
+                <ImageView
+                    android:id="@+id/iv_changePhoto"
+                    android:layout_width="@dimen/dimen50"
+                    android:layout_height="@dimen/dimen50"
+                    android:background="@drawable/notify_circle_blue"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_action_name"
+                    android:padding="@dimen/dimen10"
+
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen10"
+                    android:text="Name  : "
+                    android:textSize="@dimen/textsize18" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/dimen10"
+                    android:text="Aditya Bhargavsdjhlsdvcsdvlsdnvkbsdivnsldv"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/textsize18"
+
+                    android:singleLine="true"/>
+                <ImageView
+                    android:id="@+id/iv_editProfile"
+                    android:layout_width="@dimen/dimen30"
+                    android:layout_height="@dimen/dimen30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen20"
+                    android:src="@drawable/applozic_ic_action_edit"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen1"
+                android:background="@color/divider_color"></View>
+
+            <LinearLayout
+                android:id="@+id/ll_designation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen10"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen10"
+                    android:text="Designation  : "
+                    android:textSize="@dimen/textsize18"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_Designation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:padding="@dimen/dimen10"
+                    android:singleLine="true"
+                    android:text="App Admin"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/textsize18" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen1"
+                android:background="@color/divider_color"></View>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen40"
+                android:background="@drawable/blue_btn_bg"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="@string/logout"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize16"
+                android:elevation="@dimen/dimen3"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dimen50"
+        android:layout_height="@dimen/dimen50"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+
+        />
+
+</RelativeLayout>

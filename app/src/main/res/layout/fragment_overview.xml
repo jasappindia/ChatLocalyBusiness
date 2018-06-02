@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/rl_main"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appbar_color"
+            >
+            <ImageView
+                android:id="@+id/iv_arrowBack"
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="?attr/actionBarSize"
+                android:src="@drawable/arrow_left"
+                android:padding="@dimen/dimen10"
+                android:layout_marginLeft="@dimen/dimen10"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_toRightOf="@+id/iv_arrowBack"
+                android:text="Overview"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/lightblack"
+                android:layout_marginLeft="@dimen/dimen20"
+                />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <com.chatlocalybusiness.textview.TextViewReguler
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banner :"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/textsize16"
+            android:textColor="@color/light_gray"
+            android:layout_marginTop="20dp"
+            />
+        <ImageView
+            android:layout_width="@dimen/dimen10"
+            android:layout_height="@dimen/dimen10"
+            android:src="@drawable/star"
+            android:layout_toRightOf="@+id/tv_businessCat"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen10"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/iv_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen200"
+                android:src="@drawable/testing_banner"
+                android:adjustViewBounds="true"
+                />
+            <ImageView
+                android:id="@+id/iv_bannerCancel"
+                android:layout_width="@dimen/dimen30"
+                android:layout_height="@dimen/dimen30"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/cancel"
+                />
+        </RelativeLayout>
+
+
+    <com.chatlocalybusiness.textview.TextViewReguler
+        android:id="@+id/tv_addBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_marginLeft="20dp"
+        android:textSize="@dimen/textsize18"
+        android:textColor="@color/themeColor"
+        android:paddingTop="@dimen/dimen10"
+        android:paddingRight="@dimen/dimen20"
+        android:paddingBottom="@dimen/dimen10"
+        android:layout_marginTop="10dp" />
+
+
+        <com.chatlocalybusiness.textview.TextViewReguler
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photos :"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/textsize16"
+            android:textColor="@color/light_gray"
+            android:layout_marginTop="10dp"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+           android:visibility="gone" >
+
+        </android.support.v7.widget.RecyclerView>
+    <com.chatlocalybusiness.textview.TextViewReguler
+        android:id="@+id/tv_addPhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_marginLeft="20dp"
+        android:textSize="@dimen/textsize18"
+        android:textColor="@color/themeColor"
+        android:paddingTop="@dimen/dimen10"
+        android:paddingRight="@dimen/dimen20"
+        android:paddingBottom="@dimen/dimen10"
+        android:layout_marginTop="10dp" />
+
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="@string/str_done"
+        android:background="@drawable/gray_btn_bg"
+        android:textColor="@color/light_gray"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen20"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginBottom="@dimen/dimen50"
+        />
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dimen50"
+        android:layout_height="@dimen/dimen50"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+    </RelativeLayout>

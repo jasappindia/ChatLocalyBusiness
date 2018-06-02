@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appbar_color"
+            >
+            <ImageView
+                android:id="@+id/iv_arrowBack"
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="?attr/actionBarSize"
+                android:src="@drawable/arrow_left"
+                android:padding="@dimen/dimen10"
+                android:layout_marginLeft="@dimen/dimen10"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_toRightOf="@+id/iv_arrowBack"
+                android:text="@string/str_subscriptionInfo"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/lightblack"
+                android:layout_marginLeft="@dimen/dimen20"
+                />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_subsinfo"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan Type :"
+            android:textSize="@dimen/textsize16"
+            android:padding="@dimen/dimen15"
+            android:textColor="@color/lightblack"
+            />
+
+        <TextView
+        android:id="@+id/tv_planType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Premium 1 Year Subscription"
+        android:textSize="@dimen/textsize16"
+        android:padding="@dimen/dimen15"
+
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_background"
+        />
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiry Date :"
+            android:textSize="@dimen/textsize16"
+            android:padding="@dimen/dimen15"
+            android:textColor="@color/lightblack"
+            />
+
+        <TextView
+        android:id="@+id/tv_daysLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="203 Days Left"
+        android:textSize="@dimen/textsize16"
+        android:padding="@dimen/dimen15"
+        android:textColor="@color/themeColor"
+            />
+     <TextView
+         android:id="@+id/tv_lastDay"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="August 18,2017"
+         android:textSize="@dimen/textsize16"
+         android:paddingTop="@dimen/dimen15"
+         android:paddingBottom="@dimen/dimen15"
+         />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_background"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Payment :"
+            android:textSize="@dimen/textsize16"
+            android:padding="@dimen/dimen15"
+            android:textColor="@color/lightblack"
+            />
+
+        <TextView
+            android:id="@+id/tv_lastPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Promo Code"
+            android:textSize="@dimen/textsize16"
+            android:padding="@dimen/dimen15"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_background"
+        />
+    <TextView
+        android:id="@+id/tv_changePlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHANGE PLAN"
+        android:textColor="@color/themeColor"
+        android:layout_marginTop="@dimen/dimen20"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/textsize14"
+        android:padding="@dimen/dimen20"
+        />
+<Button
+    android:id="@+id/tv_makePayment"
+    android:layout_width="wrap_content"
+    android:layout_height="55dp"
+    android:text="MAKE PAYMENT"
+    android:textColor="@color/white"
+    android:layout_marginTop="@dimen/dimen20"
+    android:layout_gravity="center_horizontal"
+    android:textSize="@dimen/textsize14"
+    android:background="@drawable/blue_btn_bg"
+    />
+</LinearLayout>
+</LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dimen50"
+        android:layout_height="@dimen/dimen50"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/rl_main"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appbar_color">
+
+            <ImageView
+                android:id="@+id/iv_arrowBack"
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginLeft="@dimen/dimen10"
+                android:padding="@dimen/dimen10"
+                android:src="@drawable/arrow_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:layout_toRightOf="@+id/iv_arrowBack"
+                android:gravity="center_vertical"
+                android:text="Items"
+                android:textColor="@color/lightblack"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_main"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBar"
+        android:padding="5dp">
+
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen30"
+            android:background="@color/appbar_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Item"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Rate"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Qty"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Amount"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_previous"
+            android:layout_width="@dimen/next_pre_Width"
+            android:layout_height="@dimen/next_pre_Height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dimen10"
+            android:layout_marginLeft="@dimen/dimen10"
+            android:background="@color/appbar_color">
+
+            <ImageView
+                android:layout_width="@dimen/dimen30"
+                android:layout_height="@dimen/dimen20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen10"
+                android:src="@drawable/arrow_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen10"
+                android:gravity="center"
+                android:text="PREV"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/textsize16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_next"
+            android:layout_width="@dimen/next_pre_Width"
+            android:layout_height="@dimen/next_pre_Height"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dimen10"
+            android:layout_marginRight="@dimen/dimen10"
+            android:background="@color/themeColor">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen10"
+                android:gravity="center"
+                android:text="NEXT"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize16" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen10"
+                android:padding="@dimen/dimen10"
+                android:src="@drawable/arrow_white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_main"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_itemList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+             <TextView
+                      android:id="@+id/tv_finalAmount"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginRight="@dimen/dimen10"
+                       android:layout_gravity="end"
+                      android:layout_marginTop="@dimen/dimen20"
+                      android:text="Total: 1582/-"
+                      android:textColor="@color/lightblack"
+                      android:textSize="@dimen/textsize18" />
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="2dp"
+                  android:layout_below="@+id/tv_finalAmount"
+                  android:layout_marginTop="@dimen/dimen10"
+                  android:background="@color/appbar_color" />
+            <TextView
+                android:id="@+id/tv_additems"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/themeColor"
+                android:gravity="center"
+                android:text="ADD ITEMS"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize16"
+                android:layout_marginTop="@dimen/dimen10"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

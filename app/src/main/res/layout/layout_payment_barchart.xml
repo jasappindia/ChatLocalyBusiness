@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_paymentChart"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/rl_chart"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/mChart"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piChart"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        />
+    <com.chatlocalybusiness.ui.CircleImageView
+       android:id="@+id/iv_pichart"
+        android:layout_width="@dimen/dimen210"
+        android:layout_height="@dimen/dimen210"
+        android:layout_centerInParent="true"
+        android:src="@color/appbar_color"
+        android:visibility="gone"
+
+        />
+</RelativeLayout>
+<include
+    android:layout_below="@+id/rl_chart"
+    layout="@layout/layout_report_table"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="@dimen/dimen10"
+    ></include>
+
+
+</RelativeLayout>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/rl_main"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_chat_bill"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/dimen20"
+        >
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appbar_color">
+
+                <ImageView
+                    android:id="@+id/iv_arrowBack"
+                    android:layout_width="@dimen/dimen40"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginLeft="@dimen/dimen10"
+                    android:padding="@dimen/dimen10"
+                    android:src="@drawable/arrow_left" />
+
+                <TextView
+                    android:id="@+id/tv_customerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginLeft="@dimen/dimen20"
+                    android:layout_toRightOf="@+id/iv_arrowBack"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/lightblack"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/iv_deleteIcon"
+                    android:layout_width="@dimen/dimen40"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginRight="110dp"
+                    android:padding="@dimen/dimen10"
+                    android:src="@drawable/delete_icon"
+                    android:layout_alignParentRight="true"
+                    />
+                <ImageView
+                    android:id="@+id/iv_chatIcon"
+                    android:layout_width="@dimen/dimen40"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginRight="@dimen/dimen60"
+                    android:padding="@dimen/dimen10"
+                    android:src="@drawable/chat_icon"
+                    android:layout_alignParentRight="true"
+                    />
+                <ImageView
+                    android:id="@+id/iv_resendIcon"
+                    android:layout_width="@dimen/dimen40"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginRight="@dimen/dimen10"
+                    android:padding="@dimen/dimen10"
+                    android:src="@drawable/mobicom_ic_action_send_now"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appBar"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ll_bill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appbar_color"
+                android:orientation="vertical"
+
+                >
+              <!--  <LinearLayout
+                    android:id="@+id/ll_confirmation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen40"
+                    android:layout_marginLeft="@dimen/dimen10"
+                    android:layout_marginRight="@dimen/dimen10"
+
+                    >
+                <EditText
+                    android:id="@+id/et_confirmationCode"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:hint="@string/str_enterconfirmationcode"
+                    android:textColorHint="#DDDD"
+                    android:layout_weight="1.5"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:background="@color/white"
+                    android:textSize="@dimen/textsize14"
+                    android:layout_gravity="center_vertical"
+                    android:elevation="@dimen/dimen3"
+                    android:translationZ="@dimen/dimen10"
+                    />
+                    <Button
+                        android:id="@+id/btn_sendCode"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:text="send"
+                        android:background="@drawable/blue_btn_bg"
+                        android:layout_weight=".5"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="@dimen/dimen5"
+                        android:layout_gravity="center_vertical"
+                        />
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/ll_confirmation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen10"
+                    android:paddingRight="@dimen/dimen10"
+                    >
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen10"
+                        android:text="Bill Confirmation Id"
+                        android:background="@color/bg_color"
+                        android:textColor="@color/themeColor"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+
+                        <TextView
+                            android:id="@+id/tv_submit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dimen10"
+                            android:text=" Submit"
+                            android:background="@color/themeColor"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:layout_weight="0.5"
+
+                            />
+                    </LinearLayout>
+                      <TextView
+                          android:id="@+id/tv_confirmation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen10"
+                        android:background="@color/white"
+                        android:textColor="@color/lightblack"
+                        android:gravity="center"
+                          android:visibility="gone"
+                        />
+                    <EditText
+                          android:id="@+id/et_confirmation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen10"
+                        android:background="@color/white"
+                        android:textColor="@color/lightblack"
+                        android:gravity="center"
+                        />
+                      <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Submit this code to ensure us that buyer has paid the bill. "
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/dimen12"
+                          />
+
+                </LinearLayout>
+         <include layout="@layout/activity_invoice_show"></include>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen40"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen30"
+                    android:text="Sent"
+                    android:layout_marginTop="@dimen/dimen5"
+                    android:textSize="@dimen/textsize18" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_sentList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen1"
+                    android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen40"
+                    android:layout_marginTop="@dimen/dimen5"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen30"
+                    android:text="Bill Details"
+                    android:textSize="@dimen/textsize18" />
+
+                <TextView
+                    android:id="@+id/tv_paymentStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen40"
+                    android:layout_marginTop="@dimen/dimen1"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen15"
+                    android:text="Payment Status :"
+                    android:textSize="@dimen/textsize16"
+                    android:textColor="@color/lightblack"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_billNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen40"
+                    android:layout_marginTop="@dimen/dimen1"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen15"
+                    android:text="Bill Number :"
+                    android:textSize="@dimen/textsize16"
+                    android:textColor="@color/lightblack"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_billTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen40"
+                    android:layout_marginTop="@dimen/dimen1"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen15"
+                    android:text="Bill Total :"
+                    android:textSize="@dimen/textsize16"
+                    android:textColor="@color/lightblack"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_billDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen40"
+                    android:layout_marginTop="@dimen/dimen1"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen15"
+                    android:text="Bill Date :"
+                    android:textSize="@dimen/textsize16"
+                    android:textColor="@color/lightblack"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_paidate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen40"
+                    android:layout_marginTop="@dimen/dimen1"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen15"
+                    android:text="Paid Date :"
+                    android:textSize="@dimen/textsize16"
+                    android:layout_marginBottom="@dimen/dimen5"
+                    android:textColor="@color/lightblack"
+
+                    />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dimen50"
+        android:layout_height="@dimen/dimen50"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/dimen20"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appbar_color"
+            >
+            <ImageView
+                android:id="@+id/iv_arrowBack"
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="?attr/actionBarSize"
+                android:src="@drawable/arrow_left"
+                android:padding="@dimen/dimen10"
+                android:layout_marginLeft="@dimen/dimen10"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_toRightOf="@+id/iv_arrowBack"
+                android:text="@string/str_subscriptionPlans"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/lightblack"
+                android:layout_marginLeft="@dimen/dimen20"
+                />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:id="@+id/ll_subsPLan"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone"
+            >
+   <TextView
+       android:id="@+id/tv_firmName"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="The Natural Patanjali Mega Store"
+       android:gravity="center_horizontal"
+       android:textSize="@dimen/textsize16"
+       android:paddingTop="@dimen/dimen10"
+       />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dimen10"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="is on"
+            android:textSize="@dimen/textsize16"
+
+            />
+        <TextView
+            android:id="@+id/tv_currentPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Premium Plan"
+            android:textSize="@dimen/textsize16"
+            android:layout_marginLeft="@dimen/dimen10"
+            android:textColor="@color/themeColor"
+            />
+    </LinearLayout>
+
+    <!--  <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/grey_background"
+          />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen10"
+        >
+        <TextView
+            android:id="@+id/tv_basicTab"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:elevation="@dimen/dimen3"
+            android:text="Basic"
+            android:textColor="@color/themeColor"
+            android:background="@drawable/promo_bg"
+             android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_standardTab"
+       android:layout_width="100dp"
+       android:layout_height="50dp"
+       android:elevation="@dimen/dimen3"
+       android:text="Standard"
+       android:textColor="@color/lightblack"
+       android:background="@drawable/promo_grey"
+       android:gravity="center"
+
+            />
+   <TextView
+       android:id="@+id/tv_premiumTab"
+       android:layout_width="100dp"
+       android:layout_height="50dp"
+       android:elevation="@dimen/dimen3"
+       android:text="Premium"
+       android:textColor="@color/lightblack"
+       android:background="@drawable/promo_grey"
+       android:gravity="center"
+       />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_background"
+        />
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rv_planList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</android.support.v7.widget.RecyclerView>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:layout_marginTop="@dimen/dimen10"
+       >
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:padding="@dimen/dimen20"
+           android:background="@drawable/promo_grey"
+           android:gravity="center"
+           android:elevation="@dimen/dimen2"
+           >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/promo_grey"
+        android:text="1 Month"
+        android:textColor="@color/lightblack"
+        />
+           <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/promo_grey"
+        android:text="Subscription"
+               android:textColor="@color/lightblack"
+
+        />
+           <TextView
+               android:id="@+id/tv_monthlyTarrif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/promo_grey"
+        android:text="Rs 599 / Month"
+               android:textColor="@color/light_gray"
+
+        />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:padding="@dimen/dimen20"
+           android:background="@drawable/promo_grey"
+           android:layout_marginLeft="40dp"
+           android:gravity="center"
+           android:elevation="@dimen/dimen2"
+
+           >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/promo_grey"
+        android:text="1 Year"
+        android:textColor="@color/lightblack"
+
+        />
+           <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/promo_grey"
+        android:text="Subscription"
+               android:textColor="@color/lightblack"
+
+        />
+           <TextView
+               android:id="@+id/tv_yearTarrif"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/promo_grey"
+               android:text="Rs 499 / Month"
+               android:textColor="@color/light_gray"
+
+               />
+       </LinearLayout>
+   </LinearLayout>
+    <Button
+        android:id="@+id/btn_changePlan"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="change plan"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dimen20"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/textsize14"
+        android:background="@drawable/blue_btn_bg"
+        />
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dimen50"
+        android:layout_height="@dimen/dimen50"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

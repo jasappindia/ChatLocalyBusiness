@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/dimen10"
+    android:paddingLeft="@dimen/dimen10"
+    android:paddingRight="@dimen/dimen10"
+    >
+
+        <LinearLayout
+            android:id="@+id/ll_billLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/background_bills"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen5"
+                >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sent:"
+            android:textSize="@dimen/textsize14"
+            android:textColor="@color/lightblack"
+            />
+                <TextView
+            android:id="@+id/tv_sentOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Today, 1:01 PM"
+            android:textSize="@dimen/textsize14"
+                    android:textColor="@color/light_gray"
+            />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                android:layout_marginTop="@dimen/dimen5"
+
+                />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="3"
+               >
+               <TextView
+                   android:id="@+id/tv_payeeName"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Aditya Bhargav"
+                   android:textColor="@color/lightblack"
+                   android:gravity="center"
+                   android:layout_gravity="center_vertical"
+                   android:textSize="@dimen/textsize16"
+                   android:layout_weight="1.5"
+                   />
+               <ImageView
+                   android:layout_width="1dp"
+                   android:layout_height="match_parent"
+                   android:src="@color/light_gray"
+                   />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_weight="1.5"
+                    android:layout_marginBottom="@dimen/dimen5"
+                   >
+                   <TextView
+                       android:id="@+id/tv_paidStatus"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Paid"
+                       android:gravity="center"
+                       android:textSize="@dimen/textsize16"
+                       android:layout_marginTop="@dimen/dimen5"
+                       android:layout_weight="1"
+                       android:textColor="@color/themeColor"
+                       />
+                   <TextView
+                       android:id="@+id/tv_paymentAmount"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Rs 19400/-"
+                       android:textColor="@color/lightblack"
+                       android:gravity="center"
+                       android:textSize="@dimen/textsize16"
+                       android:layout_marginTop="@dimen/dimen10"
+                       android:layout_weight="1"
+                       />
+                   </LinearLayout>
+
+           </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen5"
+            android:layout_marginBottom="@dimen/dimen5"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Due Date :"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/textsize14"
+
+                />
+            <TextView
+                android:id="@+id/tv_dueDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" 12 days left"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/textsize14"
+
+                />
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:id="@+id/rl_main"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appbar_color"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/iv_crop"
+                android:layout_toStartOf="@+id/iv_crop"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen10"
+                android:src="@drawable/add_images"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/iv_crop"
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="@dimen/dimen10"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen50"
+                android:src="@drawable/crop"
+                />
+             <ImageView
+                android:id="@+id/iv_done"
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="@dimen/dimen10"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen10"
+                android:src="@drawable/tick"
+                />
+
+            <ImageView
+                android:id="@+id/iv_arrowBack"
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="?attr/actionBarSize"
+                android:src="@drawable/arrow_left"
+                android:padding="@dimen/dimen10"
+                android:layout_marginLeft="12dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Images"
+                android:textSize="18dp"
+               android:layout_toRightOf="@+id/iv_arrowBack"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen10"
+                android:textColor="#555555"
+                />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+   <ImageView
+       android:id="@+id/iv_imageSelcet"
+       android:layout_below="@+id/appBar"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@+id/ll_imagelist"
+       android:layout_marginTop="@dimen/dimen50"
+       android:layout_centerInParent="true"
+       android:layout_marginBottom="@dimen/dimen20"
+       />
+    <LinearLayout
+        android:id="@+id/ll_imagelist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen120"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_imageList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+        <ImageView
+            android:id="@+id/iv_addImages"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/add_icon"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
